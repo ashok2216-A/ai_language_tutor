@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaAI - Reading Comprehension</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="brand">
+                <div class="logo-container">
+                    <i class="fas fa-language logo-icon"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>LinguaAI</h1>
+                    <p class="tagline">Master Languages with AI</p>
+                </div>
+            </div>
+            <div class="user-menu">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-profile">
+                    <span>John Smith</span>
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="app-layout">
+            <aside class="app-sidebar">
+                <div class="sidebar-header">
+                    <h2>Learning Modules</h2>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="index.html" class="nav-item" data-module="dashboard">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="diagnostic-test.html" class="nav-item" data-module="diagnostic-test">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>Diagnostic Test</span>
+                    </a>
+                    <a href="speaking-practice.html" class="nav-item" data-module="speaking-practice">
+                        <i class="fas fa-microphone"></i>
+                        <span>Speaking Practice</span>
+                    </a>
+                    <a href="writing-assistant.html" class="nav-item" data-module="writing-assistant">
+                        <i class="fas fa-pen-fancy"></i>
+                        <span>Writing Assistant</span>
+                    </a>
+                    <a href="listening-practice.html" class="nav-item" data-module="listening-practice">
+                        <i class="fas fa-headphones"></i>
+                        <span>Listening Practice</span>
+                    </a>
+                    <a href="reading-comprehension.html" class="nav-item active" data-module="reading-comprehension">
+                        <i class="fas fa-book-open"></i>
+                        <span>Reading Comprehension</span>
+                    </a>
+                    <a href="adaptive-quizzes.html" class="nav-item" data-module="adaptive-quizzes">
+                        <i class="fas fa-tasks"></i>
+                        <span>Adaptive Quizzes</span>
+                    </a>
+                </nav>
+                
+                <div class="sidebar-footer">
+                    <div class="sidebar-section">
+                        <h3>Help & Support</h3>
+                        <a href="#" class="support-link">
+                            <i class="fas fa-question-circle"></i>
+                            <span>FAQs</span>
+                        </a>
+                        <a href="#" class="support-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact Support</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            
+            <main class="app-content" id="content-area">
+                <!-- Content will be loaded by JavaScript -->
+            </main>
+        </div>
+
+        <footer class="app-footer">
+            <p>&copy; 2025 LinguaAI | Powered by Advanced AI Technology</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="src/js/main.js" type="module"></script>
+    <script src="src/js/reading-comprehension.js" type="module"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize the reading comprehension module
+            if (typeof initReadingComprehension === 'function') {
+                initReadingComprehension();
+            }
+        });
+    </script>
+</body>
+</html>
